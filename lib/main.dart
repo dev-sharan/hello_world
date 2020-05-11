@@ -1,16 +1,32 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
+  home: Home()
+));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
     appBar: AppBar(
       title: Text("App bar TEXT"),
       centerTitle: true,
+      backgroundColor: Colors.red[600]
     ),
     body: Center(
-      child: Text("Body aria!"),
+      child: Image(
+          image: AssetImage('assets/galaxy1.jpg'),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text("Floating !!!"),
+        onPressed: () => {},
+        child: Text("Click!eeee",
+          style: TextStyle(
+              fontFamily: 'IndieFlower'
+            ),
+          ),
+        backgroundColor: Colors.red[600]
       ),
-    ),
-));
+    );
+  }
+}
