@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
             print("Clicked!!");
           },
           icon: Icon(
-            Icons.alternate_email,
+            Icons.timer,
             color: Colors.amber
           ),
         ),
