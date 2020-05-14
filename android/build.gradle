@@ -25,6 +25,9 @@ subprojects {
 subprojects {
     project.evaluationDependsOn(':app')
 }
+subprojects {
+    project.setProperty("target-platform", "android-arm64")
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
