@@ -13,8 +13,15 @@ class Home extends StatelessWidget {
       centerTitle: true,
       backgroundColor: Colors.blue[600]
     ),
-    body: Center(
-      child: IconButton(
+    body: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+    Container(
+      color: Colors.red,
+      padding: EdgeInsets.all(50),
+      margin: EdgeInsets.all(50),
+      child: Center(child: IconButton(
           onPressed: () {
             print("Clicked!!");
           },
@@ -23,6 +30,10 @@ class Home extends StatelessWidget {
             color: Colors.amber
           ),
         ),
+        ),
+      ), 
+      FlatButton(onPressed: () {}, child: Text("Button"),),
+      ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => {},
